@@ -30,5 +30,23 @@ Before running the application, make sure to set the configuration variables in 
 To run this project, follow these steps:
 
 1. Set the configuration variables in the config.py file.
+```python
+class WebConfig:
+    REDIRECT_URI = "insert your web uri"
+
+
+class Web3Config:
+    WEB3_PROVIDER_URI = "inser web3 provider uri"
+
+
+class DiscordConfig:
+    CLIENT_ID = "insert your discord client id"
+    CLIENT_SECRET = "insert your discord client secret key"
+    API_URI = 'https://discord.com/api'
+    BOT_TOKEN = "insert your discord bot token"
+    DISCORD_ROLE_ID = "insert discord role id"
+    DISCORD_SERVER_ID = "insert discord server id"
+
+```
 2. Run the main.py file to start the Flask web application.
 3. Access the web application in a web browser.
