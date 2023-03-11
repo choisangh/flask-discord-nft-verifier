@@ -34,6 +34,10 @@ def verify_post():
     if not is_verified:
         return 'Signature verification failed', 400
 
+    is_holder = web3_manager.check_holder(wallet_address)
+    if not is_holder:
+        return 'You are not NFT holder', 400
+
     # 검증에 성공하면 Discord 봇에서 해당 사용자에게 역할 부여
     discord.add_role(discord_id)
     return 'Verification success', 200
