@@ -1,0 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+canvas {
+  background-color: #000;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+#canvas-wrap {
+  position: relative;
+} /* Make this a positioned parent */
+#overlay {
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -65%);
+}
+
+#walletAddress {
+  margin-top: 40px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.glass-panel {
+  color: #fff;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 30%;
+  border-radius: 15px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+}
+
+.glass-button-primary {
+  display: inline-block;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.glass-button-primary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

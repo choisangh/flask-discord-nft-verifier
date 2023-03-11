@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MetaMask Connection</title>
+    <link rel="stylesheet" href="static/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="./static/web3verify.js" defer></script>
+
+  </head>
+  <body>
+    <center>
+      <div id="canvas-wrap">
+        <canvas id="nokey" width="800" height="800">
+          Your Browser Don't Support Canvas, Please Download Chrome ^_^``
+        </canvas>
+        <div id="overlay" class="glass-panel">
+          <div class="button-container">
+            <img src="./static/logo.svg" />
+            <!-- <p class="subtitle">It's good day to connect wallet</p> -->
+            <button class="glass-button-primary" id="connectWallet" onclick="">
+              Connect Wallet
+            </button>
+            <button class="glass-button-primary" id="syncDiscord" onclick="">
+              Sync Discord
+            </button>
+          </div>
+          <p id="walletAddress"></p>
+        </div>
+      </div>
+
+      <script src="./static/background.js"></script>
+
+    </center>
+  </body>
+</html>
