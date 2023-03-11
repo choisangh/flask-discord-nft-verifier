@@ -36,7 +36,9 @@ class WebConfig:
 
 
 class Web3Config:
-    WEB3_PROVIDER_URI = "inser web3 provider uri"
+    WEB3_PROVIDER_URI = "insert web3 provider uri"
+    CONTRACT_ADDRESS = "insert ERC-721 CA"
+    ABI = "insert ABI"
 
 
 class DiscordConfig:
